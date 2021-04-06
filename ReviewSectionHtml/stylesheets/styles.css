@@ -1,0 +1,230 @@
+/* set-up */
+:root {
+    --mainGold: #d7be69;
+    --mainWhite: whitesmoke;
+    --mainBlack: #121212;
+    --mainDarkGrey: #252525;
+    --mainLightGrey: #fdfdfd;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+    --secondTransition: all 0.3s ease-in-out;
+    --fontFamily: "Yu Gothic Light", sans-serif;
+    --fontHeadings: "Bodoni MT", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--mainBlack);
+    background: var(--mainLightGrey);
+    font-family: var(--fontFamily);
+    font-size: 1.2em;
+}
+
+/* --- navigation --- */
+.navbar {
+    color: var(--mainWhite) !important;
+    background-color: var(--mainBlack) !important;
+}
+
+.navbar-brand {
+    color: var(--mainGold) !important;
+    font-size: 2em !important;
+    font-family: var(--fontHeadings);
+}
+
+.navbar li a {
+    color: var(--mainWhite) !important;
+    font-size: 1.1em !important;
+}
+
+.navbar li a:hover {
+    color: var(--mainGold) !important;
+    transition: var(--mainTransition);
+}
+
+.navbar button {
+    color: var(--mainWhite);
+}
+
+.navbar button:hover {
+    color: var(--mainGold);
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    margin: 0 0.7rem;
+    cursor: pointer;
+}
+
+.nav-icon > a {
+    color: var(--mainWhite) !important;
+}
+
+.cart-btn {
+    position: relative;
+}
+
+.cart-items {
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    background: var(--mainGold);
+    padding: 0 5px;
+    border-radius: 30%;
+    color: var(--mainDarkGrey);
+}
+
+/* --- end of navigation --- */
+
+/* --- homepage --- */
+.hero {
+    height: 80vh;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/hero.jpg"); */
+    background-image: url(./images/hero\ -\ Copy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--mainWhite);
+}
+
+.hero h1 {
+    font-size: 6em;
+    color: var(--mainGold);
+    font-style: italic;
+    font-family: var(--fontHeadings);
+    text-shadow: 0.1rem 0.1rem 0.8rem black;
+}
+
+.hero h3 {
+    font-size: 1.8em;
+    font-weight: 300;
+    text-shadow: 0.1rem 0.1rem 0.8rem black;
+}
+
+.hero button {
+    color: var(--mainDarkGrey);
+    background-color: var(--mainWhite);
+    border-color: var(--mainWhite);
+}
+
+.hero button:hover {
+    color: var(--mainWhite);
+    background-color: var(--mainGold);
+    border-color: var(--mainGold);
+    transition: var(--mainTransition);
+}
+
+/* --- end of homepage --- */
+
+/* --- order details --- */
+.order,
+.checkout,
+.confirmed-order {
+    color: var(--mainBlack);
+    /* background-color: var(--mainLightGrey); */
+    background-image: url(./images/dish-bg.jpg);
+    background-position: bottom-center;
+}
+
+.order h3,
+.checkout h3 {
+    text-transform: capitalize;
+    font-family: var(--fontHeadings);
+    color: var(--mainWhite);
+    text-shadow: 0.1rem 0.1rem 0.8rem black;
+    font-size: 2.8em;
+}
+
+.order .table,
+.checkout form {
+    background-color: rgba(248, 245, 245, 0.8);
+    border: none!important;
+}
+.order-details button,
+.order-details span {
+    margin: 1%;
+}
+
+.order-details i {
+    font-size: 10px;
+}
+
+.order button:hover,
+.checkout button:hover,
+.confirmed-order button:hover {
+    transition: var(--mainTransition);
+    background-color: var(--mainGold);
+    border-color: var(--mainGold);
+}
+/* --- end of order details --- */
+
+/* --- checkout --- */
+.checkout form {
+    padding: 5%;
+}
+
+/* --- end of checkout --- */
+
+/* --- confirmation --- */
+.confirmed-order {
+    height: 80vh;
+    color: var(--mainWhite);
+    text-shadow: 0.1rem 0.1rem 0.8rem black;
+}
+
+/* --- end of confirmation ---- */
+
+/* --- footer --- */
+.footer {
+    color: var(--mainWhite);
+    background-color: var(--mainDarkGrey);
+}
+
+.footer-title {
+    text-transform: capitalize;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.days {
+    font-style: italic;
+}
+
+.footer i {
+    font-size: 30px;
+    color: var(--mainWhite);
+    padding: 2%;
+}
+
+.footer i:hover {
+    transition: var(--mainTransition);
+    color: var(--mainGold);
+}
+
+.footer-bottom {
+    background-color: #121212;
+    color: whitesmoke;
+}
+
+/* --- end of footer --- */
+
+/* --- Review Section --- */
+.star-rating {
+    line-height:32px;
+    font-size:1.25em;
+}
+
+.star-rating .fa-star{
+    color: gold;
+}
+
+.review{
+    align-content: center;
+}
+
+/* --- end of review section --- */
